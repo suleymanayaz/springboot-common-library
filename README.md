@@ -28,9 +28,15 @@ Add the following dependency to your `pom.xml` file:
 
 ```xml
 <dependency>
-    <groupId>com.dedicoder.common.library</groupId>
-    <artifactId>common-library</artifactId>
-    <version>1.0.0</version>
+  <groupId>com.dedicoder</groupId>
+  <artifactId>common-library</artifactId>
+  <version>1.0.0</version>
+</dependency>
+        --------------------OR-----------------------
+<dependency>
+<groupId>io.github.suleymanayaz</groupId>
+<artifactId>common-library</artifactId>
+<version>1.0.0</version>
 </dependency>
 ```
 
@@ -264,7 +270,7 @@ open class TestWSConfig(
     override var basePath: String = ""  // if not include test.ws.request.basePath in .properties file
 ) : WSConfig
 ```
-### application.properties 
+### application.properties
 
 Add the following properties to your application.properties file:
 ```properties
@@ -347,7 +353,7 @@ This example shows how to create a configuration class that implements the WSCon
 
 ### Database Configuration
 
-### MSSL
+### MSSQL
 
 For MSSQL configurations, you can use the `MSSQLConfig` interface.
 
@@ -368,11 +374,11 @@ For Oracle configurations, you can use the `OracleConfig` interface.
 
 ```kotlin
 interface OracleConfig {
-    val host: String
-    val port: Int
-    val serviceName: String
-    val username: String
-    val password: String
+  val host: String
+  val port: Int
+  val serviceName: String
+  val username: String
+  val password: String
 }
 ```
 
