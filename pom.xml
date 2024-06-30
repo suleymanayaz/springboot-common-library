@@ -6,6 +6,58 @@
 	<version>1.0.0</version>
 	<name>common-library</name>
 	<description>Common Library for Shared Configurations and Components</description>
+	<url>http://www.dedicoder.com</url>
+	<inceptionYear>2024</inceptionYear>
+
+	<organization>
+		<name>Dedicoder</name>
+		<url>http://www.dedicoder.com</url>
+	</organization>
+
+	<licenses>
+		<license>
+			<name>Apache License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+
+	<developers>
+		<developer>
+			<id>suleymanayaz</id>
+			<name>Suleyman Ayaz</name>
+			<email>suleyman@dedicoder.com</email>
+			<organization>Dedicoder</organization>
+			<organizationUrl>http://www.dedicoder.com</organizationUrl>
+			<roles>
+				<role>developer</role>
+			</roles>
+			<timezone>+3</timezone>
+		</developer>
+	</developers>
+
+	<contributors>
+		<contributor/>
+	</contributors>
+
+	<scm>
+		<connection>scm:git:git://github.com/suleymanayaz/springboot-common-library.git</connection>
+		<developerConnection>scm:git:ssh://github.com:suleymanayaz/springboot-common-library.git</developerConnection>
+		<url>http://github.com/suleymanayaz/springboot-common-library</url>
+		<tag>HEAD</tag>
+	</scm>
+
+	<issueManagement>
+		<system>GitHub Issues</system>
+		<url>http://github.com/suleymanayaz/springboot-common-library/issues</url>
+	</issueManagement>
+
+	<ciManagement>
+		<system>GitHub Actions</system>
+		<url>http://github.com/suleymanayaz/springboot-common-library/actions</url>
+	</ciManagement>
+
 
 	<properties>
 		<java.version>17</java.version>
@@ -17,16 +69,7 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 	</properties>
 
-	<distributionManagement>
-		<repository>
-			<id>ossrh</id>
-			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-		</repository>
-		<snapshotRepository>
-			<id>ossrh</id>
-			<url>https://oss.sonatype.org/content/repositories/snapshots/</url>
-		</snapshotRepository>
-	</distributionManagement>
+
 
 	<dependencies>
 		<!-- Spring Context Dependency -->
@@ -141,5 +184,13 @@
 			</plugin>
 		</plugins>
 	</build>
+
+	<distributionManagement>
+		<repository>
+			<id>github</id>
+			<url>https://maven.pkg.github.com/suleymanayaz/springboot-common-library</url>
+		</repository>
+	</distributionManagement>
+
 
 </project>
