@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+
+    <Loggers>
+        <Logger name="com.dedicoder.general.exception" level="ERROR" />
+        <Logger name="com.dedicoder.http.internal.HttpMessageLogger.request" level="WARN" />
+        <Logger name="com.dedicoder.http.internal.HttpMessageLogger.listener" level="WARN" />
+    </Loggers>
+
+</Configuration>
